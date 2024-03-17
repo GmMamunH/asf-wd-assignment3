@@ -1,0 +1,144 @@
+/* ======== root ========== */
+:root {
+  --bg-color: #fff;
+  --section-bg-color: #f1f1f1;
+  --price-bg-color: #616161;
+
+  --text-color: #000;
+  --btn-color-hover: #ccc;
+}
+/* For Laptop or small-size screen: 768px -1024px */
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 0 10px;
+  }
+  /* ============== container end ========== */
+  .home .home-text {
+    padding: 40px 30px;
+  }
+  .home .home-text .first-ht {
+    color: var(--bg-color);
+    font-size: 36px;
+    line-height: 64.8px;
+    display: block;
+    margin-top: 180px;
+  }
+
+  .home .social-link {
+    margin-top: 50px;
+    padding: 0px 30px;
+  }
+
+  /* ======== home section end ====== */
+
+  .review .review-container {
+    padding: 50px 60px;
+  }
+  /* =========== review section end ========== */
+
+  .skill .right-side .skill-bar {
+    width: 20rem;
+  }
+}
+
+/* For Mobile devices: 320px-480px
+** For Tablets or iPad: 480px - 768px */
+@media only screen and (max-width: 768px) {
+  /* ====== responsive ===== */
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    color: var(--text-color);
+    font-size: 25px;
+    padding: 20px 0px;
+  }
+
+  /* ======== responsive end ======= */
+  /* .header{background-color: var(--bg-color);} */
+  .header .main-menu .menu {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-color);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.12);
+    width: 50%;
+    overflow: auto;
+    left: 0%;
+    top: 100%;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .header nav .main-menu ul {
+    flex-direction: column;
+    position: relative;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes anim {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+
+  /* ======= header end ========= */
+  .home .home-text {
+    padding: 40px 30px;
+  }
+  .home .home-text .first-ht {
+    color: var(--bg-color);
+    font-size: 36px;
+    line-height: 64.8px;
+    display: block;
+    margin-top: 180px;
+  }
+
+  .home .social-link {
+    margin-top: 50px;
+    padding: 0px 30px;
+  }
+  /* ======== home section end ====== */
+
+  .design .left-side,
+  .skill .left-side,
+  .contact .contact-box .contact-head {
+    width: 100%;
+  }
+  .design .right-side,
+  .skill .right-side,
+  .contact .contact-box .contact-form {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+  .design .left-side {
+    order: 2;
+    margin-top: 20px;
+  }
+  .design .right-side {
+    order: 1;
+  }
+  /* ========== design end ======= */
+
+  .review .review-container {
+    padding: 50px 16px;
+  }
+
+  /* ============= review end ========== */
+  .skill .right-side .skill-bar {
+    width: 22rem;
+  }
+  .price .price-box .pro li:first-child {
+    margin-top: 0px;
+  }
+  /* ============ skill section end ======== */
+}
