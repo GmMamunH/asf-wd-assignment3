@@ -182,6 +182,10 @@ input[type="checkbox"],
   margin-right: 10px;
 }
 
+.home .social-link a i:hover{
+  opacity: 0.8;
+}
+
 /* ======== home section end ====== */
 /* ============= all box here ============== */
 .about-single-box,
